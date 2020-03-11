@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Etch-a-Sketch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <!-- grid input field -->
+        <button type="button" class='clear'>Clear</button>
+        <!-- drop-down -->
+        <label>Grid Size :</label>
+        <select id="drop-down">
+            <option value="16">16 x 16</option>
+            <option value="28">28 x 28</option>
+            <option value="40">40 x 40</option>
+            <option value="52">52 x 52</option>
+            <option value="64">64 x 64</option>
+          </select>
+        <button type="button" class='apply'>Apply</button>
+        <!-- grid container -->
+        <div class="grid-container"></div>
+        <!-- script -->
+        <script src="script.js"></script>
+    </body>
+</html>
