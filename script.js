@@ -2,7 +2,7 @@ const gridContainer = document.querySelector('.grid-container')
 const gridSize = document.querySelector('#drop-down')
 const apply = document.querySelector('.apply').addEventListener('click',changeGridSize)
 
-function changeGridSize() {
+function changeGridSize() {//make delete grid container
     window.location.reload()
 }
 
@@ -32,9 +32,9 @@ squareToArray.forEach((square) => {
         //Extract RGB value from mouse event
         function fadeToBlack() {
             let extractRgb = e.target.style.backgroundColor.match(/\d+/g)
-            let r2 = Number(extractRgb[0])-25
-            let g2 = Number(extractRgb[1])-25
-            let b2 = Number(extractRgb[2])-25
+            let r2 = Number(extractRgb[0])-20
+            let g2 = Number(extractRgb[1])-20
+            let b2 = Number(extractRgb[2])-20
             return 'rgb(' + r2 + ', ' + g2 + ', ' + b2 + ')'
         }
 
