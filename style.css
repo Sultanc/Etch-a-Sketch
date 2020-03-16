@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(156, 192, 202, 0.685);
+    background-color: rgb(49, 51, 51);
     height: 800px;
     width: 900px;
     display: block;
@@ -8,7 +8,38 @@ body{
 	font-family: monospace;
 }
 
+.flex-container{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    top: 40px;
+}
+
+h1 {
+    color: rgb(190, 255, 181);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: max-content;
+}
+
+.foo{
+    color: rgb(190, 255, 181);
+}
+
+.create, .clear{ 
+    border: 0;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+	font-family: monospace;
+}
+
 .grid-container{
+    background-color: rgba(190, 255, 181, 0.08);
     position: relative;
     height: 601px;
     width: 600px;
@@ -21,25 +52,5 @@ body{
     flex-flow: column wrap;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
-}
-
-.square{
-    position: relative;
-}
-
-.flex-container{
-    position: relative;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    top: 40px;
-}
-
-h1 {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	width: max-content;
+    padding: 0.5px;
 }
