@@ -51,8 +51,6 @@ function createGrid(){
 // create button
 function changeGridSize(){
     let squareToRemove = Array.prototype.slice.apply(document.querySelectorAll('.square'))
-    squareToRemove.forEach((square) => {
-    gridContainer.removeChild(square)
-})
-createGrid()
+    squareToRemove.forEach((square) => {gridContainer.removeChild(square)})
+    createGrid()
 }
