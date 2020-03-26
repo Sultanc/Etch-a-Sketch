@@ -19,6 +19,7 @@ function createGrid(){
     const squareToArray = Array.prototype.slice.apply(document.querySelectorAll('.square'))
     squareToArray.forEach((square) => {
         square.addEventListener("mouseover",function(e){ 
+            piano()
             document.querySelector('.clear').addEventListener('click',clearPad)
             e.target.style.backgroundColor = false
                 let r = Math.floor(Math.random()*255)
@@ -32,10 +33,7 @@ function createGrid(){
             }
             else 
             e.target.style.backgroundColor = fadeToBlack(e)
-            // clearpad
-            function clearPad(){
-                square.style.backgroundColor = ''
-            }
+            
             //Extract RGB value from mouse event
             function fadeToBlack(e) {
                 let extractRgb = e.target.style.backgroundColor.match(/\d+/g)
@@ -43,6 +41,18 @@ function createGrid(){
                 let g2 = Number(extractRgb[1])-27
                 let b2 = Number(extractRgb[2])-27
                 return 'rgb(' + r2 + ', ' + g2 + ', ' + b2 + ')'
+            }
+            // clearpad
+            function clearPad(){
+                square.style.backgroundColor = ''
+            }
+            //piano
+            function piano(){
+                const pianoNotes = document.querySelectorAll('.note')
+                let playNote = pianoNotes[Math.floor(Math.random() * 11)]
+                playNote.play()
+                playNote.volume = 0.1
+                // console.log(.volume)
             }
         })
     })
