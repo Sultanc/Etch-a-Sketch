@@ -49,7 +49,7 @@ function createGrid(){
             //piano
             function piano(){
                 const pianoNotes = document.querySelectorAll('.note')
-                let playNote = pianoNotes[Math.floor(Math.random() * 11)]
+                let playNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)]
                 playNote.play()
                 playNote.volume = 0.1
                 // console.log(.volume)
